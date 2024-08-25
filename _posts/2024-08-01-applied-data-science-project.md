@@ -24,7 +24,7 @@ Business Objective = Improve the commuter experience of the Singapore MRT system
 Data mining goal: To identify the factors contributing to MRT train reliability
 
 ## Work Accomplished
-To address the project objectives, the task had to be broken down to the following problem statements:
+To address the project objectives, the task can be broken down to the following problem statements:
 <ol>
   <li style="color: red;">How can we systematically analyze and interpret large volumes of textual data related to MRT breakdowns and reliability?</li>
   <li style="color: red;">What are the key issues affecting MRT reliability, and how do they evolve over time?</li>
@@ -59,6 +59,7 @@ Dynamic Topic Modeling (DTM) was implemented to analyze how topics related to MR
 The optimal number of topics and other hyperparameters were fine-tuned to capture meaningful patterns.
 
 Below shows that the highest coherence before the curve plateau occurs at number of topics 8, which is the optimal case.
+<br>So number of topics was fixed at 8 as key modelling parameter.
 
 ![Coherence and Perplexity Scores for varous topic numbers](image-7.png)
 
@@ -72,7 +73,10 @@ Coherence scores remain relatively stable over the years with no dips or signifi
 
 Visualized the top terms associated with each topic and their evolution across different time periods.
 
-
+For example for Topic 1, in 2015, the key issues were breakdown of power system components. 
+<br>But in 2017, the Topic 1 issues were replaced by flooding due to maintenance problems.
+<br> In 2024, the main issues were lightning strikes which cause failure to arrestor.
+<br><span style="color:red">From these visualizations, we can see key topics affecting MRT reliability and how they evolve over time. (Solution to Problem statement 2)</span>
 
 ![alt text](image-9.png)
 
@@ -81,17 +85,13 @@ Visualized the top terms associated with each topic and their evolution across d
 Based on the dynamic topic modeling analysis, several key findings and recommendations emerged:
 
 **Key Findings (Data from 2011 to 2024)**:
-- **Seasonal Variation in Topics**: The analysis revealed a notable shift in the prevalence of topics over the years. Specifically, topics discussed during the November-December period have been declining in prominence, while those during May-June have become more prevalent. This could indicate changes in commuter behavior, operational challenges, or external factors influencing MRT service during these periods.
+- **Seasonal Variation in Topics**: The analysis revealed a notable shift in the prevalence of topics over the years. Specifically, topics discussed during the November-December period have been declining in prominence, while those during May-June have become more prevalent. This could indicate changes in commuter behavior, operational challenges, or external factors influencing MRT reliability during these periods.
   
-- **Rising Focus on Specific Stations**: Since 2022, there has been a marked increase in the intensity of topics related to specific MRT and LRT stations, particularly Kranji, Bedok, and Harborfront. These stations have seen an uptick in discussions, which could point to localized issues, such as increased passenger load, infrastructure challenges, or other operational concerns.
+- **Rising Focus on Specific Stations**: Since 2022, there has been a marked increase in the intensity of topics related to specific MRT and LRT stations, particularly Kranji, Bedok, and Harborfront. These stations have seen an uptick in articles, which could point to localized issues, such as increased passenger load, infrastructure challenges, or other operational concerns.
 
-- **Fault Detection vs. Breakdown Incidents**: While the number of breakdown incidents has decreased in recent years, the analysis highlights an increase in the detection of faults. This trend suggests that the MRT system's monitoring and diagnostic capabilities have improved, enabling the identification of potential issues before they lead to breakdowns. However, it also indicates a growing need to address these detected faults proactively to prevent future service disruptions.
+- **Fault Detection vs. Breakdown Incidents**: While the number of breakdown incidents has decreased in recent years, the analysis highlights an increase in the detection of faults. This trend suggests that the MRT system's monitoring and diagnostic capabilities have improved, enabling the identification of potential issues before they lead to breakdowns. However, it also indicates a growing need to address detected "faults" proactively to prevent future service disruptions.
 
 - **Nighttime Operations**: The frequency of topics related to "night" operations has been rising steadily up to 2024. This could reflect challenges specific to nighttime disruptions, which may require targeted attention.
-
-### Identification of Evolving Issues
-
-The dynamic topic modeling uncovered evolving issues within the MRT system, such as the persistent but shifting prominence of "signal faults." These findings suggest that while some problems remain constant, their impact and relevance may fluctuate over time due to external factors such as technological advancements, regulatory changes, or shifting commuter patterns.
 
 ### Recommendations
 
@@ -106,7 +106,7 @@ The dynamic topic modeling uncovered evolving issues within the MRT system, such
    - **Community Engagement**: Engage with commuters and local communities at these stations to gather additional insights that may not be captured in the data. This can provide a more holistic understanding of the issues and help tailor interventions to the specific needs of these areas.
 
 3. **Proactive Maintenance Strategies**:
-   - **Predictive Maintenance Enhancement**: The trend of increasing fault detection with fewer breakdowns suggests that predictive maintenance strategies are already yielding benefits. To build on this success, MRT operations should consider further refining these strategies by focusing on the periods and locations where faults are more likely to occur. For example, intensifying predictive maintenance efforts during the times when "signal faults" are more likely to be discussed can help prevent these issues from escalating into service disruptions.
+   - **Predictive Maintenance Enhancement**: The trend of increasing fault detection with fewer breakdowns suggests that predictive maintenance strategies are already yielding benefits. To build on this success, MRT operations should consider further refining these strategies by focusing on the periods and locations where faults are more likely to occur. For example, intensifying predictive maintenance efforts during the times when "signal faults" are more likely to appear as topics can help prevent these issues from escalating into service disruptions.
    
    - **Fault Analysis and Resolution**: Systematically analyze the detected faults to understand their root causes and develop targeted resolution strategies. This approach can help reduce the likelihood of faults recurring and improve overall system reliability.
 
@@ -119,7 +119,8 @@ The dynamic topic modeling uncovered evolving issues within the MRT system, such
 
 The dynamic topic modeling analysis provides valuable insights into the evolving challenges within Singapore's MRT system. 
 <br>By leveraging these insights, MRT operations can implement targeted, data-driven interventions that enhance system reliability, anticipate and address emerging issues, and ultimately improve the commuter experience. 
-<br>The recommended actions, grounded in the analysis, offer a proactive approach to maintaining and improving the MRT system's performance in the years to come.
+<br><span style="color:red">The recommended actions, grounded in the analysis, offer a proactive approach to maintaining and improving the MRT system's operational performance. (Solution to Problem statement 3)</span>
+
 
 ## AI Ethics
 In conducting this project aimed at improving the reliability of Singapore's MRT system using dynamic topic modeling, a robust AI ethics governance framework was adhered to.
@@ -149,8 +150,7 @@ In conducting this project aimed at improving the reliability of Singapore's MRT
 
 **Ethical Consideration**: **Accuracy**
 - **Implementation**: To avoid misleading conclusions that could negatively impact MRT operations and commuter experience, rigorous evaluation metrics (ie coherence and perplaxity scores) were used to ensure the accuracy and reliability of the topic modeling results. 
-
-Human oversight was also a crucial component of the implementation process. 
+<br><br>Human oversight was also a crucial component of the implementation process. 
 <br>Throughout the project, humans had to review and validate the results to ensure that the model's outputs aligned with real-world conditions and practical considerations. 
 <br>Further iterations were conducted to replace erroneous model outputs; this human oversight helped to mitigate the risk of inaccuracies.
 
@@ -163,11 +163,11 @@ Human oversight was also a crucial component of the implementation process.
 - **Implementation**: We prioritized transparency throughout the project by clearly documenting the methodology, data sources, and decision-making processes. 
 <br>This documentation was made accessible to all relevant stakeholders to build trust in the analysis and facilitate scrutiny. 
 <br>By maintaining an open and transparent approach, we aimed to foster a culture of trust and accountability in the deployment of AI-driven solutions.
-<br> Also to enhance Explainability, we provided explanations for the model's computation results in a way that was understandable to non-expert stakeholders. This included generating summaries that clarified how particular results were to be understood, helping users grasp the rationale behind the model's outcomes.
+<br><br>Also to enhance Explainability, we provided explanations for the model's computation results in a way that was understandable to non-expert stakeholders. This included generating summaries that clarified how particular results were to be understood, helping users grasp the rationale behind the model's outcomes.
 
 ---
 
-By adhering to these principles and addressing the associated ethical issues, this project sought to not only improve the reliability of Singapore's MRT system but also do so in a manner that is ethically responsible and aligned with the best practices in AI governance.
+<br>By adhering to these principles and addressing the associated ethical issues, this project sought to not only improve the reliability of Singapore's MRT system but also do so in a manner that is ethically responsible and aligned with the best practices in AI governance.
 
 ## Source Codes and Datasets
 GitHub repo link:
