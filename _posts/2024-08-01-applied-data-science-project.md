@@ -69,7 +69,7 @@ Assessed the model's performance using coherence scores to ensure the quality an
 
 Coherence scores remain relatively stable over the years with no dips or significant drops in coherence scores.
 
-![alt text](image-8.png)
+![Coherence Score over the years](image-8.png)
 
 Visualized the top terms associated with each topic and their evolution across different time periods.
 
@@ -78,7 +78,7 @@ For example for Topic 1, in 2015, the key issues were breakdown of power system 
 <br> In 2024, the main issues were lightning strikes which cause failure to arrestor.
 <br><span style="color:red">From these visualizations, we can see key topics affecting MRT reliability and how they evolve over time. (Solution to Problem statement 2)</span>
 
-![alt text](image-9.png)
+![Visualization for Topics evolution over time](image-9.png)
 
 
 ## Recommendation and Analysis
