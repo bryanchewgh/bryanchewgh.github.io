@@ -39,7 +39,7 @@ To address the project objectives, the task can be broken down to the following 
 
 Exploratory Data Analysis (EDA) was carried out on the 504 documents/articles collected.
 
-![Document distribution over the years](image-1.png)
+![Document distribution over the years](./image-1.png)
 
 Text data was cleaned and tokenized to ensure consistency and accuracy in analysis.
 <br>Lemmatization was applied reduce words to their base form.
@@ -48,9 +48,9 @@ Text data was cleaned and tokenized to ensure consistency and accuracy in analys
 Frequency distribution and word cloud plots show the term words distribution.
 
 
-![Frequency distribution of cleaned words](image-4.png)
+![Frequency distribution of cleaned words](./image-4.png)
 
-![Word Cloud from cleaned data](image-5.png)
+![Word Cloud from cleaned data](./image-5.png)
 
 ### Modelling
 Dynamic Topic Modeling (DTM) was implemented to analyze how topics related to MRT reliability evolved over time.
@@ -61,7 +61,7 @@ The optimal number of topics and other hyperparameters were fine-tuned to captur
 Below shows that the highest coherence before the curve plateau occurs at number of topics 8, which is the optimal case.
 <br>So number of topics was fixed at 8 as key modelling parameter.
 
-![Coherence and Perplexity Scores for varous topic numbers](image-7.png)
+![Coherence and Perplexity Scores for varous topic numbers](./image-7.png)
 
 
 ### Evaluation
@@ -69,7 +69,7 @@ Assessed the model's performance using coherence scores to ensure the quality an
 
 Coherence scores remain relatively stable over the years with no dips or significant drops in coherence scores.
 
-![Coherence Score over the years](image-8.png)
+![Coherence Score over the years](./image-8.png)
 
 Visualized the top terms associated with each topic and their evolution across different time periods.
 
@@ -78,7 +78,7 @@ For example for Topic 1, in 2015, the key issues were breakdown of power system 
 <br> In 2024, the main issues were lightning strikes which cause failure to arrestor.
 <br><span style="color:red">From these visualizations, we can see key topics affecting MRT reliability and how they evolve over time. (Solution to Problem statement 2)</span>
 
-![Visualization for Topics evolution over time](image-9.png)
+![Visualization for Topics evolution over time](./image-9.png)
 
 
 ## Recommendation and Analysis
