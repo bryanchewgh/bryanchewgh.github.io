@@ -98,7 +98,7 @@ Based on the dynamic topic modeling analysis, several key findings and recommend
 1. **Seasonal and Temporal Analysis**:
    - **Targeted Resource Allocation**: Given the seasonal variation in topic prevalence, it is recommended that MRT operations consider allocating resources more strategically throughout the year. For example, increasing maintenance and operational support during May-June, when issues are more prevalent, could help mitigate potential disruptions.
    
-   - **Enhanced Monitoring During Key Periods**: The declining focus on November-December should not lead to complacency. Instead, maintaining robust monitoring during this period can help ensure that the lower prominence of topics is a true reflection of fewer issues rather than reduced reporting or attention.
+   - **Enhanced Monitoring During Key Periods**: The declining focus on November-December should not lead to complacency. Instead, maintaining robust monitoring during this period can help ensure that the lower prominence of topics is consistently maintained.
 
 2. **Station-Specific Interventions**:
    - **Focused Attention on High-Risk Stations**: The increase in topic intensity around Kranji, Bedok, and Harborfront stations suggests that these locations may require enhanced operational focus. Interventions could include more frequent inspections, infrastructure upgrades, or increased staffing during peak hours.
