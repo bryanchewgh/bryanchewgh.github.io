@@ -10,7 +10,7 @@ Singapore's Mass Rapid Transit (MRT) system is a critical component of the city'
 Singapore Public Transport Council (PTC) completed a survey in Apr 2024.
 <br>*Data Source: https://www.ptc.gov.sg/newsroom/news-releases/newsroom-view/ptc-s-survey-findings-on-customers--satisfaction-with-public-transport*
 
-![Reliability is most important for train service](image.png)
+![Reliability is most important for train service](../_posts/image.png)
 
 Commuters felt that train reliability is the most important service component to them, followed by travel time and then next after is safety/security.
 
